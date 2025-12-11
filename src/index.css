@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for in-page anchor links (#services, #about, etc.) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global body styles */
+body {
+  @apply bg-slate-950 text-slate-100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+/* Optional: make images never overflow their containers */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: remove default link underline & use color/hover instead */
+a {
+  text-decoration: none;
+}
+
+/* Optional: improve focus visibility a bit */
+:focus-visible {
+  outline: 2px solid theme('colors.emerald.500');
+  outline-offset: 2px;
+}
