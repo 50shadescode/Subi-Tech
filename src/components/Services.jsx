@@ -12,10 +12,12 @@ const services = [
     icon: "🛠️",
   },
   {
-    title: "AI Product Prototyping",
+    title: "Full-Stack AI Development",
     description:
-      "Turn vague ideas into working prototypes. Rapid iteration with real data and real models to validate value early.",
-    icon: "⚡",
+      "We don't just hand over a model. We build production-ready React/Node apps, stunning portfolios, and internal tools that integrate AI seamlessly.",
+    icon: "💻",
+    // This is the new property for the "pills"
+    tags: ["Web Apps", "Portfolios", "SaaS"],
   },
   {
     title: "MLOps & Deployment",
@@ -37,13 +39,27 @@ function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="p-6 bg-slate-900 border border-slate-800 rounded-xl shadow-sm hover:shadow-md hover:border-slate-700 transition"
+              className="p-6 bg-slate-900 border border-slate-800 rounded-xl shadow-sm hover:shadow-md hover:border-emerald-500/30 transition duration-300 flex flex-col"
             >
               <div className="text-4xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <h3 className="text-xl font-semibold mb-2 text-white">{service.title}</h3>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4 flex-grow">
                 {service.description}
               </p>
+
+              {/* Logic to render the tags if they exist */}
+              {service.tags && (
+                <div className="flexSV flex-wrap gap-2 mt-auto pt-4 border-t border-slate-800">
+                  {service.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2 py-1 text-xs font-medium rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>
