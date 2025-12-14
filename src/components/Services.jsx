@@ -1,68 +1,64 @@
+import React from 'react';
+
 const services = [
   {
     title: "AI Strategy & Roadmapping",
-    description:
-      "Identify high-value AI opportunities, evaluate feasibility, and define a technical roadmap aligned with your business goals.",
-    icon: "🧭",
+    description: "I help you identify where AI can actually save money or generate revenue — and create a clear, practical roadmap to implement it without disrupting your business.",
+    icon: "🧭" 
   },
   {
     title: "Data & ML Engineering",
-    description:
-      "Clean, transform, and structure messy datasets. Build robust data pipelines and training workflows for high-quality models.",
-    icon: "🛠️",
+    description: "I turn messy, unstructured data into reliable systems that power accurate reports, dashboards, and AI tools.",
+    icon: "🛠️"
   },
   {
     title: "Full-Stack AI Development",
-    description:
-      "We don't just hand over a model. We build production-ready React/Node apps, stunning portfolios, and internal tools that integrate AI seamlessly.",
-    icon: "💻",
-    // This is the new property for the "pills"
-    tags: ["Web Apps", "Portfolios", "SaaS"],
+    description: "I build complete, production-ready web applications — from the user interface to the backend — integrating AI where it delivers real value.",
+    icon: "💻"
   },
   {
     title: "MLOps & Deployment",
-    description:
-      "Deploy, monitor, and maintain AI systems in production. Ensure reliability, performance, and regulatory compliance.",
-    icon: "🚀",
-  },
+    description: "I ensure your systems run reliably in production, remain secure, and scale as your business grows.",
+    icon: "🚀"
+  }
 ];
 
 function Services() {
   return (
-    <section id="services" className="py-24 border-b border-slate-800">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12">
-          What We Offer
-        </h2>
+    <section id="services" className="py-24 bg-slate-950 border-b border-slate-800">
+      <div className="max-w-7xl mx-auto px-4">
+        
+        <div className="mb-16 md:w-2/3">
+          <span className="text-emerald-400 font-semibold tracking-wider uppercase text-sm">
+            Technical Capabilities
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mt-4 mb-6">
+            How we do it.
+          </h2>
+          <p className="text-slate-400 text-lg">
+             You don't need to know the code. You just need to know it works. Here is the technical foundation we use to build your solution.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <div
+            <div 
               key={index}
-              className="p-6 bg-slate-900 border border-slate-800 rounded-xl shadow-sm hover:shadow-md hover:border-emerald-500/30 transition duration-300 flex flex-col"
+              className="group p-6 rounded-xl border border-slate-800 bg-slate-900/20 hover:bg-slate-900 hover:border-emerald-500/30 transition-all"
             >
-              <div className="text-4xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-2 text-white">{service.title}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4 flex-grow">
+              <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                {service.icon}
+              </div>
+              <h3 className="text-lg font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">
+                {service.title}
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
                 {service.description}
               </p>
-
-              {/* Logic to render the tags if they exist */}
-              {service.tags && (
-                <div className="flexSV flex-wrap gap-2 mt-auto pt-4 border-t border-slate-800">
-                  {service.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-2 py-1 text-xs font-medium rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              )}
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

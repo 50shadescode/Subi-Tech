@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Solutions from './components/Solutions'; // <-- NEW IMPORT
 import Services from './components/Services';
 import Outcomes from './components/Outcomes';
 import CaseStudies from './components/CaseStudies';
@@ -11,17 +12,27 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
-      <header className="border-b border-slate-800">
-        <div className="max-w-6xl mx-auto px-4 py-4">
-          <Navbar />
-        </div>
-      </header>
+    // Added selection color for a premium feel when highlighting text
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-emerald-500/30">
+      
+      {/* NOTE: I removed the <header> wrapper that was here.
+        Your new Navbar.jsx handles the sticky header logic internally.
+      */}
+      <Navbar />
 
       <main>
         <Hero />
+        
+        {/* STRATEGY UPDATE: Show "Solutions" (Industry) before Technical Services */}
+        <Solutions />
+        
         <Services />
+        
+        {/* Tip: Since 'Solutions' now covers results, check if 'Outcomes' 
+           is still needed. If it feels repetitive, you can delete this line later.
+        */}
         <Outcomes />
+        
         <CaseStudies />
         <Method />
         <About />
