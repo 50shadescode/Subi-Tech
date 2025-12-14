@@ -1,71 +1,101 @@
-// src/components/Footer.jsx
+import React from 'react';
 
 const EMAIL = "subiAItech@gmail.com";
 const WHATSAPP_NUMBER = "254726063889";
 
 function Footer() {
-  return (
-    <footer className="border-t border-slate-800 mt-16">
-      <div className="max-w-6xl mx-auto px-4 py-8 flex flex-col gap-8 md:flex-row md:items-start md:justify-between text-sm text-slate-400">
-        {/* Brand & tagline */}
-        <div>
-          <div className="font-semibold text-slate-100">Subi AI Tech</div>
-          <p className="text-xs text-slate-500 mt-1 max-w-xs">
-            Practical AI consulting for teams who care about what ships.
-          </p>
-        </div>
+  const currentYear = new Date().getFullYear();
 
-        {/* Navigation links */}
-        <div className="flex flex-col gap-2">
-          <div className="font-semibold text-slate-200 mb-1">Explore</div>
-          <div className="flex flex-wrap gap-4">
-            <a href="#services" className="hover:text-slate-200 transition">
-              Services
-            </a>
-            <a href="#cases" className="hover:text-slate-200 transition">
-              Case Studies
-            </a>
-            <a href="#about" className="hover:text-slate-200 transition">
-              About
-            </a>
-            <a href="#faq" className="hover:text-slate-200 transition">
-              FAQ
-            </a>
-            <a href="#hero" className="hover:text-slate-200 transition">
-              Back to top
-            </a>
+  return (
+    <footer className="bg-slate-950 border-t border-slate-800 pt-16 pb-8 text-sm">
+      <div className="max-w-7xl mx-auto px-4">
+        
+        {/* Top Section: Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          
+          {/* Column 1: Brand & Mission (Spans 2 columns for better readability) */}
+          <div className="md:col-span-2 space-y-4">
+            <div className="flex items-center gap-3">
+              {/* Brand Icon */}
+              <div className="h-10 w-10 rounded-full bg-emerald-500 flex items-center justify-center text-slate-950 font-black text-lg">
+                S
+              </div>
+              <span className="text-lg font-bold text-slate-100 tracking-tight">
+                Subi AI Tech
+              </span>
+            </div>
+            <p className="text-slate-400 leading-relaxed max-w-sm">
+              Practical AI consulting for teams who care about what ships. We help you move from "AI could be useful" to production systems that create real value.
+            </p>
+          </div>
+
+          {/* Column 2: Navigation */}
+          <div>
+            <h3 className="text-white font-semibold mb-6">Explore</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="#services" className="text-slate-400 hover:text-emerald-400 transition-colors">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#cases" className="text-slate-400 hover:text-emerald-400 transition-colors">
+                  Case Studies
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="text-slate-400 hover:text-emerald-400 transition-colors">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="text-slate-400 hover:text-emerald-400 transition-colors">
+                  FAQ
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 3: Contact Info */}
+          <div>
+            <h3 className="text-white font-semibold mb-6">Contact</h3>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <span className="text-slate-500">Email:</span>
+                <a href={`mailto:${EMAIL}`} className="text-slate-300 hover:text-emerald-400 transition-colors">
+                  {EMAIL}
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-slate-500">WhatsApp:</span>
+                <a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noreferrer" className="text-slate-300 hover:text-emerald-400 transition-colors">
+                  +{WHATSAPP_NUMBER}
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-slate-500">Location:</span>
+                <span className="text-slate-300">
+                  Nairobi, Kenya
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
 
-        {/* Contact block */}
-        <div className="flex flex-col gap-2">
-          <div className="font-semibold text-slate-200 mb-1">Contact</div>
-          <a
-            href={`mailto:${EMAIL}`}
-            className="hover:text-slate-200 transition"
-          >
-            Email: <span className="underline">{EMAIL}</span>
-          </a>
-          <a
-            href={`https://wa.me/${WHATSAPP_NUMBER}`}
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-slate-200 transition"
-          >
-            WhatsApp: <span className="underline">+{WHATSAPP_NUMBER}</span>
-          </a>
+        {/* Bottom Bar: Copyright & Legal */}
+        <div className="border-t border-slate-900 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-slate-500">
+          <div className="flex flex-col sm:flex-row gap-2 items-center">
+            <p>&copy; {currentYear} Subi AI Tech. All rights reserved.</p>
+            <span className="hidden sm:inline text-slate-700">|</span>
+            <p className="text-slate-600 text-xs">Built with React & Tailwind</p>
+          </div>
+          
+          <div className="flex gap-6 text-xs sm:text-sm">
+            <a href="#" className="hover:text-emerald-400 transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-emerald-400 transition-colors">Terms of Service</a>
+          </div>
         </div>
-      </div>
 
-      <div className="border-t border-slate-900">
-        <div className="max-w-6xl mx-auto px-4 py-4 text-xs text-slate-600 flex flex-col sm:flex-row gap-2 justify-between">
-          <span>
-            © {new Date().getFullYear()} Subi AI Tech. All rights reserved.
-          </span>
-          <span className="text-slate-500">
-            Built with React &amp; Tailwind CSS.
-          </span>
-        </div>
       </div>
     </footer>
   );
