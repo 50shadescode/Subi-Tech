@@ -1,4 +1,6 @@
 import { useState } from "react";
+// 1. IMPORT YOUR LOGO
+import logo from "../assets/suby-tech-logo.jpg";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,25 +17,24 @@ function Navbar() {
   ];
 
   return (
-    // 1. STICKY HEADER WRAPPER
-    // - sticky top-0: Sticks to top
-    // - z-50: Ensures it sits on top of everything else
-    // - backdrop-blur-md: Gives the "frosted glass" effect
-    // - border-b: Adds a subtle separation line
+    // STICKY HEADER WRAPPER
     <header className="sticky top-0 z-50 w-full border-b border-slate-800 bg-slate-950/80 backdrop-blur-md">
       
-      {/* 2. INNER CONTAINER (Aligns with Hero) */}
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+      {/* INNER CONTAINER */}
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2">
         
-        {/* Logo / Brand */}
-        <div className="flex items-center gap-3">
-          <div className="h-10 w-10 sm:h-11 sm:w-11 rounded-full bg-emerald-500 flex items-center justify-center text-slate-950 font-black text-lg">
-            S
-          </div>
-          <span className="text-lg font-semibold tracking-tight text-slate-100">
-            Subi AI Tech
-          </span>
-        </div>
+        {/* --- LOGO SECTION (UPDATED SIZE) --- */}
+        <a href="#" className="flex items-center gap-3">
+          <img 
+            src={logo} 
+            alt="Suby Tech" 
+            // UPDATES:
+            // 1. Height increased to h-24 (mobile) and md:h-40 (desktop) for maximum visibility
+            // 2. mix-blend-screen keeps the background clean
+            className="h-24 md:h-40 w-auto object-contain mix-blend-screen" 
+          />
+        </a>
+        {/* ---------------------------------- */}
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8 text-sm text-slate-300">
@@ -62,7 +63,6 @@ function Navbar() {
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
-          {/* Simple Hamburger/Close Icon Logic */}
           {isOpen ? (
              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 18 18"/></svg>
           ) : (
@@ -71,8 +71,7 @@ function Navbar() {
         </button>
       </nav>
 
-      {/* 3. MOBILE DROPDOWN */}
-      {/* Positioned absolute relative to the <header> */}
+      {/* MOBILE DROPDOWN */}
       {isOpen && (
         <div className="absolute top-full left-0 w-full border-b border-slate-800 bg-slate-950/95 backdrop-blur-xl md:hidden">
           <div className="flex flex-col p-4 space-y-4">

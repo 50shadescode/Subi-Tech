@@ -1,4 +1,6 @@
 import React from 'react';
+// 1. IMPORT THE LOGO
+import logo from '../assets/suby-tech-logo.jpg';
 
 const EMAIL = "subiAItech@gmail.com";
 const WHATSAPP_NUMBER = "254726063889";
@@ -13,17 +15,20 @@ function Footer() {
         {/* Top Section: Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           
-          {/* Column 1: Brand & Mission (Spans 2 columns for better readability) */}
+          {/* Column 1: Brand & Mission */}
           <div className="md:col-span-2 space-y-4">
+            
+            {/* --- REPLACED BRAND HEADER WITH LOGO --- */}
             <div className="flex items-center gap-3">
-              {/* Brand Icon */}
-              <div className="h-10 w-10 rounded-full bg-emerald-500 flex items-center justify-center text-slate-950 font-black text-lg">
-                S
-              </div>
-              <span className="text-lg font-bold text-slate-100 tracking-tight">
-                Subi AI Tech
-              </span>
+               <img 
+                 src={logo} 
+                 alt="Suby Tech" 
+                 // Using the same sizing classes as the Navbar for uniformity
+                 className="h-24 md:h-40 w-auto object-contain mix-blend-screen" 
+               />
             </div>
+            {/* -------------------------------------- */}
+
             <p className="text-slate-400 leading-relaxed max-w-sm">
               Practical AI consulting for teams who care about what ships. We help you move from "AI could be useful" to production systems that create real value.
             </p>
@@ -85,7 +90,8 @@ function Footer() {
         {/* Bottom Bar: Copyright & Legal */}
         <div className="border-t border-slate-900 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-slate-500">
           <div className="flex flex-col sm:flex-row gap-2 items-center">
-            <p>&copy; {currentYear} Subi AI Tech. All rights reserved.</p>
+            {/* Updated Copyright Name */}
+            <p>&copy; {currentYear} Suby Tech. All rights reserved.</p>
             <span className="hidden sm:inline text-slate-700">|</span>
             <p className="text-slate-600 text-xs">Built with React & Tailwind</p>
           </div>
