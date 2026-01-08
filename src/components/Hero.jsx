@@ -2,6 +2,12 @@ import React from 'react';
 import profilePic from '../assets/profile.jpg';
 
 function Hero() {
+
+  const callBackend = () => {
+    fetch("/api/health")
+      .then(res => res.json())
+      .then(data => console.log("Backend data: ", data))
+  }
   return (
     <section
       id="hero"
@@ -15,7 +21,7 @@ function Hero() {
 
       {/* Main Container */}
       <div className="max-w-7xl mx-auto px-4 py-16 lg:py-24 flex flex-col md:flex-row items-center gap-6 lg:gap-8">
-        
+
         {/* LEFT COLUMN: Text Content */}
         <div className="flex-1 text-left z-10">
           <p className="text-emerald-400 text-sm font-semibold tracking-[0.2em] uppercase">
@@ -65,10 +71,11 @@ function Hero() {
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[450px] md:h-[450px]">
             {/* Glow effect */}
             <div className="absolute -inset-4 bg-emerald-500/20 blur-3xl rounded-full"></div>
-            
-            <img 
-              src={profilePic} 
-              alt="Subi AI Tech Founder" 
+
+            <img
+              src={profilePic}
+              onClick={callBackend}
+              alt="Subi AI Tech Founder"
               className="relative w-full h-full object-cover rounded-2xl shadow-2xl border border-slate-700/50"
             />
           </div>
