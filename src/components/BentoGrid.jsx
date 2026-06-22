@@ -79,7 +79,7 @@ export default function BentoGrid() {
     <section id="services" className="mx-auto max-w-7xl px-6 py-20 relative">
       {/* Updated Header Component */}
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <p className="text-xs font-mono tracking-widest text-emerald-400 uppercase">SOLUTIONS WE DELIVER</p>
+        <p className="text-xs font-mono tracking-widest text-emerald-400 uppercase">// SOLUTIONS WE DELIVER</p>
         <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white mt-3">
           Building for Business Outcomes. <br />
           <span className="bg-gradient-to-r from-zinc-100 to-zinc-400 bg-clip-text text-transparent">
