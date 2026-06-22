@@ -72,9 +72,9 @@ export default function BentoGrid() {
       <div className="text-center max-w-3xl mx-auto mb-16">
         <p className="text-xs font-bold tracking-widest text-emerald-400 uppercase">Capabilities</p>
         <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white mt-3">
-          We don't just write code. <br />
+          Building Systems That Drive Business Growth. <br />
           <span className="bg-gradient-to-r from-zinc-100 to-zinc-400 bg-clip-text text-transparent">
-            We solve business realities.
+          From Concept to Production with Confidence.
           </span>
         </h2>
       </div>
