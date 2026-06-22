@@ -38,46 +38,47 @@ function Hero() {
       {/* Main Centered Container */}
       <div className="max-w-5xl mx-auto px-6 text-center z-10 relative">
         
-        {/* Modern Minimalist Pill Badge */}
+        {/* Modern Minimalist Pill Badge / Small Trust Line */}
         <div className="mx-auto inline-flex items-center space-x-2 rounded-full border border-emerald-500/20 bg-emerald-500/5 px-4 py-1.5 text-xs font-semibold tracking-wider text-emerald-400 uppercase mb-8">
-          <span>AI Consulting</span>
+          <span>Software Engineering</span>
           <span className="text-emerald-500/30">•</span>
-          <span>Data Products</span>
+          <span>AI Automation</span>
           <span className="text-emerald-500/30">•</span>
-          <span>MLOps</span>
+          <span>Data Science</span>
+          <span className="text-emerald-500/30">•</span>
+          <span>Analytics</span>
         </div>
 
-        {/* 1% Global Class Typographic Headline */}
+        {/* Global Technology Studio Headline */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight text-white leading-[1.1]">
-          First-principles AI solutions <br />
+          Building Intelligent Systems <br />
           <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-indigo-500 bg-clip-text text-transparent">
-            that actually ship.
+            For Modern Organizations
           </span>
         </h1>
 
-        {/* Crisp Subtext Container */}
+        {/* Studio-Grade Value-Based Subheadline */}
         <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-3xl mx-auto mt-6 mb-10">
-          We help fast-moving teams design, prototype, and launch AI-enabled products
-          – from messy CSVs and half-baked ideas to production systems your users
-          actually touch.
+          Suby Tech designs software platforms, AI automation, and data systems that help 
+          organizations operate smarter, move faster, and scale with confidence.
         </p>
 
-        {/* Unified Premium Call-To-Actions */}
+        {/* Dual Premium Studio Actions */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto">
+          <a
+            href="#projects"
+            className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 px-8 py-4 text-sm font-semibold text-slate-950 shadow-lg shadow-emerald-500/20 hover:opacity-95 transition-all duration-200"
+          >
+            View Our Work
+          </a>
+
           <a
             href="https://wa.me/254726063889"
             target="_blank"
             rel="noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 px-8 py-4 text-sm font-semibold text-slate-950 shadow-lg shadow-emerald-500/20 hover:opacity-95 transition-all duration-200"
-          >
-            Chat on WhatsApp
-          </a>
-
-          <a
-            href="mailto:studio@subytech.com"
             className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl border border-slate-800 bg-slate-950/50 px-8 py-4 text-sm font-semibold text-white hover:bg-slate-900 hover:border-slate-700 transition-all duration-200"
           >
-            Contact Studio
+            Start a Project
           </a>
         </div>
 
@@ -86,7 +87,7 @@ function Hero() {
           No vague AI hype. We work with you to define concrete business outcomes and ship towards them.
         </p>
 
-        {/* Elite Animated System Simulation Panel (Replaces the split portrait container) */}
+        {/* Elite Animated System Simulation Panel */}
         <div className="mt-16 text-left relative rounded-2xl border border-slate-800/80 bg-slate-950/40 p-2 shadow-2xl shadow-indigo-500/5 backdrop-blur-sm overflow-hidden group max-w-4xl mx-auto">
           <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent" />
           
