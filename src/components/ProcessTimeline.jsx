@@ -1,106 +1,83 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 
-export default function ProcessTimeline() {
-  const [activeStep, setActiveStep] = useState(0);
-
-  const steps = [
+export default function Outcomes() {
+  const corporateOutcomes = [
     {
-      num: "01",
-      title: "Discovery & Strategy",
-      desc: "We deep-dive into your operational bottleneck or product layout. No code is written until we isolate your key success levers and clarify exact data constraints.",
-      bullets: ["Business Process Auditing", "Context-Window Feasibility", "Goal Mapping Testing"],
+      heading: "Business-First Thinking",
+      body: "We begin with outcomes, not technology. We analyze your operational bottlenecks and financial overhead before writing a single line of code, ensuring every system delivers a measurable return on investment.",
     },
     {
-      num: "02",
-      title: "Architecture & Design",
-      desc: "Our studio constructs robust system topologies. We map data flows, plan state-machine parameters, and plan secure schema bindings before initializing the build.",
-      bullets: ["Multi-Agent Orchestration Schemes", "Secure API Mapping", "Vector Store Selection"],
+      heading: "End-to-End Ownership",
+      body: "From strategy to deployment. Our studio assumes absolute accountability for the complete lifecycle of your system, eliminating contractor friction and guaranteeing seamless execution.",
     },
     {
-      num: "03",
-      title: "Development & Integration",
-      desc: "Engineering high-performance microservices. We build out Python backends, hook up Next.js/Flutter application panels, and inject production-ready models.",
-      bullets: ["FastAPI Service Layering", "Full-Stack System Wireframe", "Webhook & Gateway Implementation"],
+      heading: "Scalable Architecture",
+      body: "Designed for long-term growth. We engineer high-performance platforms built on resilient, deterministic foundations that smoothly absorb massive concurrent transactional traffic as your operations expand.",
     },
     {
-      num: "04",
-      title: "Deployment & Launch",
-      desc: "We pack services inside clean runtime containers, run rigorous latency validation suites, and move your architecture out onto live cloud environments securely.",
-      bullets: ["Docker Containerization", "Automated Load Testing", "Live Deployment Scrutiny"],
-    },
-    {
-      num: "05",
-      title: "Support & Evolution",
-      desc: "Continuous system verification. We actively look for context drift, optimize system call costs, and scale database structures as your actual data scale expands.",
-      bullets: ["MLOps Pipeline Oversight", "System Latency Polishing", "Database Scale Adjustments"],
+      heading: "Cross-Disciplinary Expertise",
+      body: "Software, data, AI, and automation under one roof. We break down the traditional technical silos to deliver unified digital ecosystems where your data pipelines and intelligent automation loops interact flawlessly.",
     },
   ];
 
   return (
-    <section id="process" className="mx-auto max-w-5xl px-6 py-20 border-t border-slate-900">
-      <div className="text-center mb-16">
-        <p className="text-xs font-bold tracking-widest text-emerald-400 uppercase">Methodology</p>
-        <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white mt-3">
-          Our Engineering DNA
-        </h2>
-      </div>
-
-      {/* Sleek Step Navigation Row */}
-      <div className="flex flex-wrap justify-between items-center gap-2 border-b border-slate-900 pb-6 mb-12">
-        {steps.map((step, idx) => (
-          <button
-            key={idx}
-            onClick={() => setActiveStep(idx)}
-            className={`flex items-center space-x-3 pb-2 border-b-2 transition-all duration-200 outline-none ${
-              activeStep === idx
-                ? "border-emerald-500 text-white font-semibold"
-                : "border-transparent text-slate-500 hover:text-slate-300"
-            }`}
-          >
-            <span className={`text-xs font-mono px-2 py-0.5 rounded ${
-              activeStep === idx ? "bg-emerald-500/10 text-emerald-400" : "bg-slate-900 text-slate-500"
-            }`}>
-              {step.num}
-            </span>
-            <span className="text-sm hidden sm:inline">{step.title.split(" ")[0]}</span>
-          </button>
-        ))}
-      </div>
-
-      {/* Dynamic Display Panel for the Active Phase */}
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-start bg-slate-950/20 border border-slate-900 rounded-2xl p-8 backdrop-blur-sm relative overflow-hidden">
-        <div className="absolute top-0 right-0 p-8 text-8xl font-black text-slate-900/40 font-mono select-none pointer-events-none">
-          {steps[activeStep].num}
-        </div>
-
-        {/* Left Column: Context Text */}
-        <div className="md:col-span-3 space-y-4">
-          <span className="text-xs font-bold tracking-wider uppercase text-emerald-400 font-mono">
-            Phase {steps[activeStep].num}
-          </span>
-          <h3 className="text-2xl font-bold text-white tracking-tight">
-            {steps[activeStep].title}
-          </h3>
-          <p className="text-slate-400 text-sm leading-relaxed max-w-xl">
-            {steps[activeStep].desc}
+    <section id="outcomes" className="py-24 border-t border-zinc-900 bg-[#030712] relative">
+      <div className="max-w-5xl mx-auto px-6">
+        
+        {/* Section Header */}
+        <div className="max-w-3xl mb-16">
+          <p className="text-xs font-mono tracking-widest text-emerald-400 uppercase">
+            // STRATEGIC ADVANTAGE
           </p>
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white mt-3">
+            Why Organizations Work <br />
+            <span className="bg-gradient-to-r from-zinc-100 to-zinc-400 bg-clip-text text-transparent">
+              With Suby Tech
+            </span>
+          </h2>
         </div>
 
-        {/* Right Column: Execution Checkpoints */}
-        <div className="md:col-span-2 space-y-3 pt-4 md:pt-0 border-t md:border-t-0 md:border-l border-slate-900 md:pl-8">
-          <span className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">
-            Execution Checkpoints
-          </span>
-          {steps[activeStep].bullets.map((bullet, bIdx) => (
-            <div key={bIdx} className="flex items-center space-x-2.5 text-sm text-slate-300">
-              <svg className="h-4 w-4 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-              </svg>
-              <span>{bullet}</span>
+        {/* Audit-Compliant Content Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          {corporateOutcomes.map((item, index) => (
+            <div 
+              key={index} 
+              className="p-8 rounded-2xl border border-zinc-900 bg-zinc-950/20 backdrop-blur-sm flex flex-col justify-between hover:border-zinc-800 transition-all duration-300"
+            >
+              <div>
+                <span className="text-xs font-mono text-zinc-600 block mb-4">
+                  0{index + 1}.
+                </span>
+                <h3 className="text-xl font-bold text-white tracking-tight mb-3">
+                  {item.heading}
+                </h3>
+                <p className="text-sm text-zinc-400 leading-relaxed font-normal">
+                  {item.body}
+                </p>
+              </div>
             </div>
           ))}
         </div>
+
+        {/* Section-Specific Contextual CTA (Fulfills Section 11 of Audit) */}
+        <div className="flex flex-col sm:flex-row items-center justify-between p-6 rounded-xl border border-zinc-900 bg-zinc-950/40 gap-6">
+          <div className="text-center sm:text-left">
+            <h4 className="text-sm font-bold text-white font-mono uppercase tracking-wide">
+              Ready to map your business objectives to an engineered system?
+            </h4>
+            <p className="text-xs text-zinc-500 mt-1">
+              Let's align your operational workflow with scalability.
+            </p>
+          </div>
+          <a 
+            href="#contact" 
+            className="w-full sm:w-auto text-center text-xs font-mono font-bold bg-zinc-900 hover:bg-zinc-800 text-white px-6 py-3 rounded-lg border border-zinc-800 transition-all duration-200 shrink-0"
+          >
+            See Our Work &rarr;
+          </a>
+        </div>
+
       </div>
     </section>
   );

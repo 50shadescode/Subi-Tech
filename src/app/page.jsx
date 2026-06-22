@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import BentoGrid from "../components/BentoGrid";
 import CaseStudies from "../components/CaseStudies";
+import Outcomes from "../components/Outcomes"; // Added per Section 10 & 11 blueprint
 import StudioDNA from "../components/StudioDNA";
 import ContactFooter from "../components/ContactFooter";
 
@@ -15,11 +16,14 @@ export default function HomePage() {
       
       {/* 3. Selected Work (Proven Case Studies & Outcome Metrics) */}
       <CaseStudies />
+
+      {/* 4. Business Outcomes (Strategic Conversion Layer) */}
+      <Outcomes />
       
-      {/* 4. Tech Infrastructure & Architecture Stack Layers */}
+      {/* 5. Tech Infrastructure & Architecture Stack Layers */}
       <StudioDNA />
       
-      {/* 5. Lead Generation Capture & Final Conversion CTA */}
+      {/* 6. Lead Generation Capture & Final Conversion CTA */}
       <ContactFooter />
     </main>
   );
