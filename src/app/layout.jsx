@@ -4,13 +4,17 @@ import Navbar from "../components/Navbar";
 export const metadata = {
   title: "Suby Tech | Robust Systems & AI Automation",
   description: "High-end software engineering, web platforms, and automated business architectures.",
+  // Safely references the clean icon asset from your public folder
+  icons: {
+    icon: "/favicon.ico", 
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className="bg-zinc-950 text-zinc-50 antialiased">
-        {/* Global Navigation Header Header */}
+        {/* Global Navigation Header */}
         <Navbar />
         
         {/* Main Application Canvas Content */}
