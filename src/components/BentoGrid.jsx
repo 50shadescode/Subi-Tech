@@ -20,9 +20,11 @@ export default function BentoGrid() {
     {
       id: 1,
       size: "md:col-span-2",
-      tag: "Core Architecture",
+      tag: "CORE ARCHITECTURE",
       title: "Autonomous Agentic Workflows",
-      desc: "We build rule-driven, multi-agent systems and state machines that automate complex operational loops. Moving beyond basic API wrappers into intelligent business infrastructure.",
+      challenge: "Complex operational bottlenecks and repetitive administrative decision-making loops that drain team bandwidth.",
+      solution: "Rule-driven, multi-agent LLM systems and robust state machines configured to orchestrate end-to-end background operations autonomously.",
+      outcome: "Slashes manual processing overhead and drives immediate operational speed without scaling staff headcount.",
       icon: (
         <svg className="h-6 w-6 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -32,9 +34,11 @@ export default function BentoGrid() {
     {
       id: 2,
       size: "md:col-span-1",
-      tag: "Pipelines",
+      tag: "DATA PIPELINES",
       title: "Data & ML Engineering",
-      desc: "Engineering automated ingestion layers, custom scrapers, and reliable vector data streams to feed models production-grade fuel safely.",
+      challenge: "Noisy transaction logs, unstructured web information, and fragmented databases that break reporting pipelines.",
+      solution: "Automated ingestion pipelines, deterministic data scrapers, and highly reliable vector indexing data streams.",
+      outcome: "Turns raw database traffic into safe, production-grade fuel for business intelligence and analytics models.",
       icon: (
         <svg className="h-6 w-6 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
@@ -44,9 +48,11 @@ export default function BentoGrid() {
     {
       id: 3,
       size: "md:col-span-1",
-      tag: "Product Delivery",
+      tag: "PRODUCT DELIVERY",
       title: "Full-Stack AI Engineering",
-      desc: "Delivering complete end-to-end applications. We bridge the gap by anchoring complex model behavior inside high-performance web/mobile frameworks.",
+      challenge: "Brittle AI system experiments and basic prototype tools failing under high concurrent user checkout volume.",
+      solution: "Anchoring complex model behaviors into safe, production-grade web frameworks backed by robust custom APIs.",
+      outcome: "Delivers resilient, fast, and end-to-end user applications built to protect and process core transaction revenue.",
       icon: (
         <svg className="h-6 w-6 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
@@ -56,9 +62,11 @@ export default function BentoGrid() {
     {
       id: 4,
       size: "md:col-span-2",
-      tag: "Scale & Integrity",
+      tag: "SCALE & INTEGRITY",
       title: "Production MLOps & Deployment",
-      desc: "Containerizing workflows with Docker, managing latency, and monitoring model degradation under high real-world client volume to ensure systems remain fast and secure.",
+      challenge: "High system latency, server downtime risks, and model behavioral drift hidden beneath heavy transaction flow.",
+      solution: "Containerizing microservices with Docker, structural cloud resource monitoring, and transaction fail-safes.",
+      outcome: "Guarantees system speed, data consistency, and absolute platform availability under high enterprise user loads.",
       icon: (
         <svg className="h-6 w-6 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -69,12 +77,13 @@ export default function BentoGrid() {
 
   return (
     <section id="services" className="mx-auto max-w-7xl px-6 py-20 relative">
+      {/* Updated Header Component */}
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <p className="text-xs font-bold tracking-widest text-emerald-400 uppercase">Capabilities</p>
+        <p className="text-xs font-mono tracking-widest text-emerald-400 uppercase">SOLUTIONS WE DELIVER</p>
         <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white mt-3">
-          Building for the Future. <br />
+          Building for Business Outcomes. <br />
           <span className="bg-gradient-to-r from-zinc-100 to-zinc-400 bg-clip-text text-transparent">
-          Intelligent Systems that Scale.
+            Intelligent Infrastructure that Grows.
           </span>
         </h2>
       </div>
@@ -107,17 +116,29 @@ export default function BentoGrid() {
                   {item.icon}
                 </div>
                 
-                <span className="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">
+                <span className="block text-[10px] font-mono font-bold tracking-wider text-slate-500 mb-2">
                   {item.tag}
                 </span>
                 
-                <h3 className="text-xl font-bold text-white tracking-tight mb-3">
+                <h3 className="text-xl font-bold text-white tracking-tight mb-5">
                   {item.title}
                 </h3>
                 
-                <p className="text-sm text-slate-400 leading-relaxed">
-                  {item.desc}
-                </p>
+                {/* Audit Framework: Challenge -> Solution -> Outcome */}
+                <div className="space-y-4 font-normal text-sm text-slate-400 leading-relaxed">
+                  <p>
+                    <strong className="block text-[10px] font-mono text-zinc-500 tracking-wider uppercase mb-0.5">The Challenge:</strong>
+                    {item.challenge}
+                  </p>
+                  <p>
+                    <strong className="block text-[10px] font-mono text-zinc-500 tracking-wider uppercase mb-0.5">Our Implementation:</strong>
+                    {item.solution}
+                  </p>
+                  <p className="text-zinc-300">
+                    <strong className="block text-[10px] font-mono text-emerald-400/90 tracking-wider uppercase mb-0.5">Business Impact:</strong>
+                    {item.outcome}
+                  </p>
+                </div>
               </div>
             </div>
           </div>

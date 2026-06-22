@@ -1,16 +1,25 @@
 import Hero from "../components/Hero";
 import BentoGrid from "../components/BentoGrid";
-import CaseStudies from "../components/CaseStudies"; // Updated import
+import CaseStudies from "../components/CaseStudies";
 import StudioDNA from "../components/StudioDNA";
 import ContactFooter from "../components/ContactFooter";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#030712]">
+    <main className="min-h-screen bg-[#030712] text-slate-100 overflow-x-hidden">
+      {/* 1. Hero Section & Hard Trust Metrics */}
       <Hero />
+      
+      {/* 2. Solutions Layer (Renamed from Capabilities) */}
       <BentoGrid />
-      <CaseStudies /> {/* Swapped ProcessTimeline out for your new Case Studies */}
+      
+      {/* 3. Selected Work (Proven Case Studies & Outcome Metrics) */}
+      <CaseStudies />
+      
+      {/* 4. Tech Infrastructure & Architecture Stack Layers */}
       <StudioDNA />
+      
+      {/* 5. Lead Generation Capture & Final Conversion CTA */}
       <ContactFooter />
     </main>
   );
