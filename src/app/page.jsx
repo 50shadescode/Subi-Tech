@@ -4,7 +4,8 @@ import CaseStudies from "../components/CaseStudies";
 import Outcomes from "../components/Outcomes";
 import Method from "../components/Method";
 import StudioDNA from "../components/StudioDNA";
-import ContactFooter from "../components/ContactFooter"; // Handles Section 12 conversion copy
+import ResearchLab from "../components/ResearchLab"; // 1. Imported Research Lab
+import ContactFooter from "../components/ContactFooter";
 
 export default function HomePage() {
   return (
@@ -15,19 +16,23 @@ export default function HomePage() {
       {/* 2. Solutions Layer (What We Build / Bento Grid) */}
       <BentoGrid />
       
-      {/* 3. Selected Work (Proven Case Studies & Outcome Metrics) */}
+      {/* 3. Selected Work (Proven Case Studies & Outcome Metrics Layout Balance) */}
       <CaseStudies />
 
-      {/* 4. Business Outcomes (Strategic Value Layer) */}
+      {/* 4. Business Outcomes (Strategic Value Layer Matrix) */}
       <Outcomes />
 
       {/* 5. Process Methodology (Understand -> Architect -> Build -> Deploy -> Optimize) */}
       <Method />
       
-      {/* 6. Tech Infrastructure & Leadership Ecosystem Capacity */}
+      {/* 6. Tech Infrastructure Matrix (Technologies We Master) */}
+      {/* 7. Active R&D Initiatives & Leadership Ecosystem Capacity */}
       <StudioDNA />
       
-      {/* 7. Lead Generation Capture & Final Conversion CTA */}
+      {/* 8. Active R&D Framework Layer Insertion */}
+      <ResearchLab /> {/* 2. Placed perfectly here to expand technical credibility */}
+      
+      {/* 9. Lead Generation Capture & Final Conversion CTA */}
       <ContactFooter />
     </main>
   );

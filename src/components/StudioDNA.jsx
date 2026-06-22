@@ -87,7 +87,7 @@ export default function StudioDNA() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto items-stretch">
-          {/* Card 1: Founder Core Profile */}
+          {/* Card 1: Founder Core Profile (Fulfills Section 9 Blueprint) */}
           <div className="relative flex flex-col justify-between rounded-2xl border border-slate-900 bg-slate-950/20 p-8 backdrop-blur-sm overflow-hidden min-h-[260px]">
             <div className="absolute top-0 right-0 p-6 text-[10px] font-mono font-bold text-slate-700 select-none tracking-wider">
               FOUNDER // CORE
@@ -101,13 +101,13 @@ export default function StudioDNA() {
                   Martin Odhiambo Otieno
                 </h3>
                 <p className="text-sm text-slate-400 leading-relaxed">
-                  Full-Stack Systems Engineer and AI Automation Architect specializing in building scalable software platforms, intelligent automation systems, and data infrastructure that help organizations solve complex challenges, streamline operations, and achieve measurable business outcomes.
+                  Building software, data, and automation systems that solve operational challenges and create measurable business value. Specializes in scalable MERN, Python, and intelligent multi-agent setups.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Card 2: Partners Core Profile */}
+          {/* Card 2: Partners Core Profile (Resolves Section 8 Capacity Identity Bug) */}
           <div className="relative flex flex-col justify-between rounded-2xl border border-slate-900 bg-slate-950/20 p-8 backdrop-blur-sm overflow-hidden min-h-[260px]">
             <div className="absolute top-0 right-0 p-6 text-[10px] font-mono font-bold text-slate-700 select-none tracking-wider">
               PARTNER // INFRASTRUCTURE
@@ -118,7 +118,7 @@ export default function StudioDNA() {
                   BACKEND INFRASTRUCTURE LEAD
                 </span>
                 <h3 className="text-xl font-bold text-white tracking-tight mb-4">
-                  10x Engineer 
+                  10x Engineering Team
                 </h3>
                 <p className="text-sm text-slate-400 leading-relaxed">
                   Directs server architecture, distributed cloud database configurations, and robust MLOps automation pipelines. Manages background systems integrity to ensure platform performance scales securely under heavy multi-tenant traffic loads.

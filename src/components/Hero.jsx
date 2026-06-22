@@ -25,6 +25,14 @@ function Hero() {
     return () => timers.forEach(clearTimeout);
   }, []);
 
+  // Structural hard trust metrics row data matrix (Fulfills Section 1 of Audit Blueprint)
+  const trustMetrics = [
+    { value: "5+", label: "Production Systems Delivered" },
+    { value: "2–4 Weeks", label: "MVP Delivery Framework" },
+    { value: "End-to-End", label: "Development Ownership" },
+    { value: "Unified", label: "Software • Data • AI Systems" }
+  ];
+
   return (
     <section
       id="hero"
@@ -66,30 +74,43 @@ function Hero() {
         {/* Dual Premium Studio Actions */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto">
           <a
-            href="#projects"
-            className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 px-8 py-4 text-sm font-semibold text-slate-950 shadow-lg shadow-emerald-500/20 hover:opacity-95 transition-all duration-200"
-          >
-            View Our Work
-          </a>
-
-          <a
             href="https://wa.me/254726063889"
             target="_blank"
             rel="noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl border border-slate-800 bg-slate-950/50 px-8 py-4 text-sm font-semibold text-white hover:bg-slate-900 hover:border-slate-700 transition-all duration-200"
+            className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 px-8 py-4 text-sm font-semibold text-slate-950 shadow-lg shadow-emerald-500/20 hover:opacity-95 transition-all duration-200"
           >
             Start a Project
           </a>
+
+          <a
+            href="#projects"
+            className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl border border-slate-800 bg-slate-950/50 px-8 py-4 text-sm font-semibold text-white hover:bg-slate-900 hover:border-slate-700 transition-all duration-200"
+          >
+            View Selected Work
+          </a>
+        </div>
+
+        {/* Audit-Compliant Above-The-Fold Hard Trust Metrics Grid (Section 1) */}
+        <div className="mt-16 max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-px bg-slate-900/30 border border-slate-900 rounded-2xl overflow-hidden p-2 md:p-0 backdrop-blur-sm">
+          {trustMetrics.map((metric, idx) => (
+            <div key={idx} className="bg-[#030712] p-6 text-center flex flex-col justify-center">
+              <span className="text-2xl md:text-3xl font-black text-white tracking-tight block">
+                {metric.value}
+              </span>
+              <span className="text-[11px] font-mono font-medium text-slate-500 uppercase tracking-wider mt-1.5 block">
+                {metric.label}
+              </span>
+            </div>
+          ))}
         </div>
 
         {/* Subtle Low-Hype Footnote Accent */}
-        <p className="text-xs text-slate-500 mt-5 italic">
+        <p className="text-xs text-slate-500 mt-8 italic max-w-2xl mx-auto">
           We turn complex business challenges into scalable software, data, and automation systems that improve efficiency, accelerate growth, and deliver measurable results.
-
         </p>
 
         {/* Elite Animated System Simulation Panel */}
-        <div className="mt-16 text-left relative rounded-2xl border border-slate-800/80 bg-slate-950/40 p-2 shadow-2xl shadow-indigo-500/5 backdrop-blur-sm overflow-hidden group max-w-4xl mx-auto">
+        <div className="mt-12 text-left relative rounded-2xl border border-slate-800/80 bg-slate-950/40 p-2 shadow-2xl shadow-indigo-500/5 backdrop-blur-sm overflow-hidden group max-w-4xl mx-auto">
           <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent" />
           
           {/* Terminal Top Window Deck */}
