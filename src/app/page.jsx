@@ -1,7 +1,8 @@
 import Hero from "../components/Hero";
 import BentoGrid from "../components/BentoGrid";
 import CaseStudies from "../components/CaseStudies";
-import Outcomes from "../components/Outcomes"; // Added per Section 10 & 11 blueprint
+import Outcomes from "../components/Outcomes";
+import Method from "../components/Method"; // Imported the optimized framework layout
 import StudioDNA from "../components/StudioDNA";
 import ContactFooter from "../components/ContactFooter";
 
@@ -11,19 +12,22 @@ export default function HomePage() {
       {/* 1. Hero Section & Hard Trust Metrics */}
       <Hero />
       
-      {/* 2. Solutions Layer (Renamed from Capabilities) */}
+      {/* 2. Solutions Layer (What We Build / Bento Grid) */}
       <BentoGrid />
       
       {/* 3. Selected Work (Proven Case Studies & Outcome Metrics) */}
       <CaseStudies />
 
-      {/* 4. Business Outcomes (Strategic Conversion Layer) */}
+      {/* 4. Business Outcomes (Strategic Value Layer) */}
       <Outcomes />
+
+      {/* 5. Process Methodology (Understand -> Architect -> Build -> Deploy -> Optimize) */}
+      <Method />
       
-      {/* 5. Tech Infrastructure & Architecture Stack Layers */}
+      {/* 6. Tech Infrastructure & Leadership Ecosystem Capacity */}
       <StudioDNA />
       
-      {/* 6. Lead Generation Capture & Final Conversion CTA */}
+      {/* 7. Lead Generation Capture & Final Conversion CTA */}
       <ContactFooter />
     </main>
   );
