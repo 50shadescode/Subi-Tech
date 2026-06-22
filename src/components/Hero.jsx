@@ -46,7 +46,7 @@ function Hero() {
           <span className="text-emerald-500/30">•</span>
           <span>Data Science</span>
           <span className="text-emerald-500/30">•</span>
-          <span>Analytics</span>
+          <span>Data Analytics</span>
         </div>
 
         {/* Global Technology Studio Headline */}
@@ -84,7 +84,8 @@ function Hero() {
 
         {/* Subtle Low-Hype Footnote Accent */}
         <p className="text-xs text-slate-500 mt-5 italic">
-          No vague AI hype. We work with you to define concrete business outcomes and ship towards them.
+          We turn complex business challenges into scalable software, data, and automation systems that improve efficiency, accelerate growth, and deliver measurable results.
+
         </p>
 
         {/* Elite Animated System Simulation Panel */}
