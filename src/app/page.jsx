@@ -2,9 +2,9 @@ import Hero from "../components/Hero";
 import BentoGrid from "../components/BentoGrid";
 import CaseStudies from "../components/CaseStudies";
 import Outcomes from "../components/Outcomes";
-import Method from "../components/Method"; // Imported the optimized framework layout
+import Method from "../components/Method";
 import StudioDNA from "../components/StudioDNA";
-import ContactFooter from "../components/ContactFooter";
+import ContactFooter from "../components/ContactFooter"; // Handles Section 12 conversion copy
 
 export default function HomePage() {
   return (
