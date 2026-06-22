@@ -101,7 +101,7 @@ export default function StudioDNA() {
                   Martin Odhiambo Otieno
                 </h3>
                 <p className="text-sm text-slate-400 leading-relaxed">
-                  Full-stack systems and AI automation architect. Specializes in building modern product applications, complex multi-agent frameworks, and integrating regional data networks into production-ready platforms that drive concrete business value.
+                  Full-Stack Systems Engineer and AI Automation Architect specializing in building scalable software platforms, intelligent automation systems, and data infrastructure that help organizations solve complex challenges, streamline operations, and achieve measurable business outcomes.
                 </p>
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function StudioDNA() {
                   BACKEND INFRASTRUCTURE LEAD
                 </span>
                 <h3 className="text-xl font-bold text-white tracking-tight mb-4">
-                  Evans Kipngeno Cheruiyot
+                  10x Engineer 
                 </h3>
                 <p className="text-sm text-slate-400 leading-relaxed">
                   Directs server architecture, distributed cloud database configurations, and robust MLOps automation pipelines. Manages background systems integrity to ensure platform performance scales securely under heavy multi-tenant traffic loads.
