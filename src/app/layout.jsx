@@ -4,9 +4,10 @@ import Navbar from "../components/Navbar";
 export const metadata = {
   title: "Suby Tech | Robust Systems & AI Automation",
   description: "High-end software engineering, web platforms, and automated business architectures.",
-  // Safely references the clean icon asset from your public folder
+  // Safely references the clean icon assets from your public folder
   icons: {
     icon: "/favicon.ico", 
+    apple: "/apple-touch-icon.png", // Maps your mobile bookmark icon safely
   },
 };
 
